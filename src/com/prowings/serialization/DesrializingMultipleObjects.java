@@ -17,7 +17,7 @@ public class DesrializingMultipleObjects {
              	{
              		Teacher t = (Teacher) o;
              		System.out.println(t);
-             		break;
+//             		break;
              	}
              }
              System.out.println("out of while");

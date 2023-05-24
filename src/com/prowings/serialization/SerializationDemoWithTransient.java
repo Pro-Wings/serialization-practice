@@ -4,18 +4,19 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 
-public class SerializationDemo1 {
+public class SerializationDemoWithTransient {
 	
 	public static void main(String[] args) {
 		
-		Student s1 = new Student(100, "Sham");
+		Student2 s1 = new Student2(100, "Sham",1234);
+		
 		FileOutputStream file = null;
 		ObjectOutputStream out = null;
 		
 		 try
 	        {  
 	            //Saving of object in a file
-	            file = new FileOutputStream("student.ser");
+	            file = new FileOutputStream("transient_student.ser");
 	            out = new ObjectOutputStream(file);
 	             
 	            // Method for serialization of object

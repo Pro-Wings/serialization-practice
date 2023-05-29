@@ -8,11 +8,11 @@ public class Student2 implements Serializable {
 //	transient final String name = "zzz"; //case1
 	transient final String name; //case2
 	int marks;
-	static String schoolName = "ABC School";
+	final static String schoolName = "ABC School";
 	
 	public Student2() {
 		super();
-		this.name = "zzzz"; //case2
+		this.name = "YYYY"; //case2
 	}
 
 
